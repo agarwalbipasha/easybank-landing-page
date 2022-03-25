@@ -158,8 +158,18 @@
         padding: 10px 17px;
       }
       .icons {
-        margin: 20px 0;
-        width: auto;
+        display: flex;
+        justify-content: space-between;  
+        margin: 30px 0;
+        width: 130px;
+      }
+      .icon-box {
+        width: 5px;
+        height: 5px;
+      }
+      svg {
+        width: 5px;
+        height: 5px;
       }
       .footer-button {
         display: flex;
@@ -192,8 +202,8 @@
       .tag-line:hover {
         color: hsl(136, 65%, 51%);
       }
-      svg:hover {
-        fill: hsl(136, 65%, 51%);
+      .icon:hover {
+        filter: invert(0.02) sepia(1) saturate(10.9) hue-rotate(93.6deg) brightness(0.94);
         cursor: pointer;
       }
       footer .header-box:hover {
@@ -349,11 +359,21 @@
           />
         </div>
         <div class="icons">
-          <img src="./images/icon-facebook.svg" alt="Facebook icon" />
-          <img src="./images/icon-youtube.svg" alt="Youtube icon" />
-          <img src="./images/icon-twitter.svg" alt="Twitter icon" />
-          <img src="./images/icon-pinterest.svg" alt="Pinterest icon" />
-          <img src="./images/icon-instagram.svg" alt="Instagram icon" />
+          <div class="icon-box">
+            <img src="./images/icon-facebook.svg" alt="Facebook icon" class="icon"/>
+          </div>
+          <div class="icon-box">
+          <img src="./images/icon-youtube.svg" alt="Youtube icon" class="icon"/>
+          </div>
+          <div class="icon-box">
+          <img src="./images/icon-twitter.svg" alt="Twitter icon" class="icon"/>
+          </div>
+          <div class="icon-box">
+          <img src="./images/icon-pinterest.svg" alt="Pinterest icon" class="icon" />
+          </div>  
+          <div class="icon-box">
+          <img src="./images/icon-instagram.svg" alt="Instagram icon" class="icon" />
+          </div>
         </div>
       </section>
 
