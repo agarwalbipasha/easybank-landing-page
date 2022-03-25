@@ -172,11 +172,33 @@
         font-size: 11px;
         text-align: center;
         color: hsl(233, 8%, 62%);
-        font-family: 'Public Sans';
+        font-family: "Public Sans";
       }
 
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+
+      /* mouse hover changes */
+      header .header-box:hover {
+        font-weight: bold;
+        text-decoration: underline solid hsl(192, 70%, 51%) 3px;
+        cursor: pointer;
+      }
+
+      .button-style:hover {
+        cursor: pointer;
+      }
+      .tag-line:hover {
+        color: hsl(136, 65%, 51%);
+      }
+      svg:hover {
+        fill: hsl(136, 65%, 51%);
+        cursor: pointer;
+      }
+      footer .header-box:hover {
+        color: hsl(136, 65%, 51%);
+        cursor: pointer;
       }
     </style>
   </head>
@@ -320,12 +342,12 @@
     <footer class="footer">
       <section class="footer-image-icons">
         <div>
-        <img
-          src="./images/logo.svg"
-          alt="Logo of EasyBank"
-          class="logo-color"
-        />
-      </div>
+          <img
+            src="./images/logo.svg"
+            alt="Logo of EasyBank"
+            class="logo-color"
+          />
+        </div>
         <div class="icons">
           <img src="./images/icon-facebook.svg" alt="Facebook icon" />
           <img src="./images/icon-youtube.svg" alt="Youtube icon" />
@@ -347,9 +369,9 @@
           <div class="header-box">Privacy Policy</div>
         </div>
       </section>
-      <section class="footer-button">      
+      <section class="footer-button">
         <button class="button-style">Request Invite</button>
-        <div> © Easybank. All Rights Reserved</div>
+        <div>© Easybank. All Rights Reserved</div>
       </section>
     </footer>
 
