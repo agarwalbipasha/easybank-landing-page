@@ -91,8 +91,7 @@
         font-size: 20px;
       }
       .box-structure {
-        width: 330px;
-        margin: 0 3px;
+        width: 280px;
       }
 
       /* Box of the articles */
@@ -111,7 +110,7 @@
         background-color: hsl(0, 0%, 98%);
         display: flex;
         flex-direction: column;
-        padding-left: 200px;
+        padding: 80px 200px;
       }
       .image-para-container {
         border-radius: 10px;
@@ -130,30 +129,54 @@
         font-size: 20px;
         padding-left: 15px;
       }
-     .article-content {
-       display: flex;
-     }
+      .article-content {
+        display: flex;
+      }
       /* footer style */
       .footer {
         background-color: hsl(233, 26%, 24%);
         color: white;
         display: flex;
         justify-content: space-around;
-        height: 100px;
-        align-content: space-around;
+        height: 140px;
+        padding: 20px;
       }
       .footer-image-icon {
         display: flex;
         flex-direction: column;
         color: white;
+        justify-content: space-around;
       }
       .logo-color {
         filter: invert(100%) contrast(100%);
-        
+        padding: 20px 0;
       }
       .footer-items {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        padding: 10px 17px;
+      }
+      .icons {
+        margin: 20px 0;
+        width: auto;
+      }
+      .footer-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(233, 8%, 62%);
+        font-family: 'Public Sans';
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
@@ -235,14 +258,16 @@
     <article class="article-container">
       <p class="heading-content">Latest Articles</p>
       <section class="article-content">
-        <div  class="image-para-container">
+        <div class="image-para-container">
           <div class="image-box">
-          <img src="./images/image-currency.jpg" alt="Currency" class="image"/>
-        </div>
+            <img
+              src="./images/image-currency.jpg"
+              alt="Currency"
+              class="image"
+            />
+          </div>
           <p class="author-name">By Claire Robinson</p>
-          <p class="tag-line">
-            Receive money in any currency with no fees
-          </p>
+          <p class="tag-line">Receive money in any currency with no fees</p>
           <p class="author-name">
             The world is getting smaller and we’re becoming more mobile. So why
             should you be forced to only receive money in a single …
@@ -250,12 +275,14 @@
         </div>
         <div class="image-para-container">
           <div class="image-box">
-          <img src="./images/image-restaurant.jpg" alt="Restaurant" class="image" />
-        </div>
+            <img
+              src="./images/image-restaurant.jpg"
+              alt="Restaurant"
+              class="image"
+            />
+          </div>
           <p class="author-name">By Wilson Hutton</p>
-          <p class="tag-line">
-            Treat yourself without worrying about money
-          </p>
+          <p class="tag-line">Treat yourself without worrying about money</p>
           <p class="author-name">
             Our simple budgeting feature allows you to separate out your
             spending and set realistic limits each month. That means you …
@@ -263,8 +290,8 @@
         </div>
         <div class="image-para-container">
           <div class="image-box">
-          <img src="./images/image-plane.jpg" alt="Plane" class="image" />
-        </div>
+            <img src="./images/image-plane.jpg" alt="Plane" class="image" />
+          </div>
           <p class="author-name">By Wilson Hutton</p>
           <p class="tag-line">Take your Easybank card wherever you go</p>
           <p class="author-name">
@@ -274,12 +301,14 @@
         </div>
         <div class="image-para-container">
           <div class="image-box">
-          <img src="./images/image-confetti.jpg" alt="Confetti" class="image"  />
-        </div>
+            <img
+              src="./images/image-confetti.jpg"
+              alt="Confetti"
+              class="image"
+            />
+          </div>
           <p class="author-name">By Claire Robinson</p>
-          <p class="tag-line">
-            Our invite-only Beta accounts are now live!
-          </p>
+          <p class="tag-line">Our invite-only Beta accounts are now live!</p>
           <p class="author-name">
             After a lot of hard work by the whole team, we’re excited to launch
             our closed beta. It’s easy to request an invite through the site ...
@@ -287,10 +316,17 @@
         </div>
       </section>
     </article>
+    <!-- Footer section -->
     <footer class="footer">
       <section class="footer-image-icons">
-        <img src="./images/logo.svg" alt="Logo of EasyBank" class="logo-color"/>
         <div>
+        <img
+          src="./images/logo.svg"
+          alt="Logo of EasyBank"
+          class="logo-color"
+        />
+      </div>
+        <div class="icons">
           <img src="./images/icon-facebook.svg" alt="Facebook icon" />
           <img src="./images/icon-youtube.svg" alt="Youtube icon" />
           <img src="./images/icon-twitter.svg" alt="Twitter icon" />
@@ -301,21 +337,22 @@
 
       <section class="flex-box">
         <div class="footer-items">
-        <div class="header-box">About Us</div>
-        <div class="header-box">Contact</div>
-        <div class="header-box">Blog</div>
-      </div>
-      <div class="footer-items">
-        <div class="header-box">Careers</div>
-        <div class="header-box">Support</div>
-        <div class="header-box">Privacy Policy</div>
-      </div>
+          <div class="header-box">About Us</div>
+          <div class="header-box">Contact</div>
+          <div class="header-box">Blog</div>
+        </div>
+        <div class="footer-items">
+          <div class="header-box">Careers</div>
+          <div class="header-box">Support</div>
+          <div class="header-box">Privacy Policy</div>
+        </div>
       </section>
-      <button class="button-style">Request Invite</button>
+      <section class="footer-button">      
+        <button class="button-style">Request Invite</button>
+        <div> © Easybank. All Rights Reserved</div>
+      </section>
     </footer>
 
-        © Easybank. All Rights Reserved
-
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+    <div class="attribution">Coded by <a href="#">Bipasha Agarwal</a>.</div>
   </body>
 </html>
