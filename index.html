@@ -146,7 +146,7 @@
         height: 140px;
         padding: 20px;
       }
-      .footer-image-icon {
+      .footer-image-icons {
         display: flex;
         flex-direction: column;
         color: white;
@@ -154,7 +154,7 @@
       }
       .logo-color {
         filter: invert(100%) contrast(100%);
-        padding: 20px 0;
+        /* padding: 20px 0; */
       }
       .footer-items {
         display: flex;
@@ -221,7 +221,7 @@
           width: 10px;
           height: 3px;
         }
-        .flex-box {
+        .flex-box-header .flex-box {
           display: none;
         }
         header button {
@@ -255,15 +255,16 @@
         height: 300px;
       }
       .heading-content {
-        width: 350px;
+        width: 100%;
         font-size: 40px;
+        margin: 15px 0px 0 0;
         display: flex;
         justify-content: center;
-        padding: 0 15px;
+        padding: 10px 0px 0 0;
         text-align: center;
       }
       .content {
-        width: 350px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -272,8 +273,9 @@
       }
       .para {
         color: gray;
-        padding: 0 40px 0 5px;
-        /* text-align: center; */
+        padding: 0;
+        text-align: center;
+        padding: 0 30px 0 0;
       }
       .button-style {
         width: 140px;
@@ -284,22 +286,34 @@
         justify-content: center;
       }
       .section2, .article-container{
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20px 10px;
+        padding: 5px 10px;
         margin: 0;
         height: 1200px;
+      }
+      .article-container {
+        justify-content: flex-start;
+        height: 1440px;
       }
       .section2 .flex-box {
         display: flex;
         flex-direction: column;
       }
-      .section2 .heading-content, .para-position, .article-container .heading-content {
+      .section2 .heading-content, .para-position {
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 5px 10px;
+        padding: 0 10px;
+        margin: 5px 0;
+        flex-shrink: 0;
+      }
+      .article-container .heading-content {
+        display: flex;
+        justify-content: center;
+        padding: 0; 
       }
       .box-structure {
         display: flex;
@@ -309,6 +323,10 @@
         height: 200px;
         padding: 20px;
         margin: 10px;
+      }
+      .box-structure .icon {
+        justify-content: center;
+        margin: 0 90px;
       }
       .icon {
         width: 80px;
@@ -325,22 +343,84 @@
       .article-content{
         display: flex;
         flex-direction: column;
+        height: 900px;
       }
       .image-para-container {
         display: flex;
         flex-direction: column;
-        /* height: 200px; */
-        margin: 50px 10px;
+        height: 400px;
+        margin: 5px;
+        width: 300px;
       }
       .image-box {
         width: 300px;
-        /* height: 10px; */
-        border-radius: 40px;
+        height: 150px;
+        border-radius: 20px;
+        padding: 0;
+        margin: 0;
+      }
+      .image-box .image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .tag-line, .author-name {
+        margin: 0;
+        padding: 5px 20px;
+        text-align: left;
       }
       
 
       .footer {
         width: auto;
+        height: 400px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding: 80px;
+        margin: 0;
+      }
+      .footer-image-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        margin: 0;
+        height: 4px;
+        padding: 0 0 0 10px;
+
+      }
+      .icon-box {
+        width: 2px;
+        height: 2px;
+      }
+      .icon {
+        width: fit-content;
+        height: fit-content;
+        margin: 1px;
+        justify-content: center;
+        padding: 0;
+        align-content: flex-start;
+      }
+      .footer .flex-box .footer-items {
+        display: block;
+        margin: 10px 0 10px 0;
+        justify-content: space-between;
+        padding: 0;
+        height: 70px;
+
+      }
+      .footer .flex-box {
+        flex-direction: column;
+        padding: 30px 0;
+      }
+      .footer .flex-box .footer-items .header-box {
+        margin: 10px 0 10px 0;
+        text-align: center;
+      }
+      .footer-button div {
+        font-size: 10px;
+        padding: 10px;
       }
         
       }
@@ -349,7 +429,7 @@
 
   <body>
     <!-- header of the page -->
-    <header class="flex-box-header container">
+    <header class="flex-box-header">
       <img src="./images/logo.svg" alt="Logo of EasyBank" />
       <section class="flex-box">
         <div class="header-box">Home</div>
@@ -363,7 +443,7 @@
       <button class="button-style">Request Invite</button>
     </header>
     <!-- 1st section of the page -->
-    <section class="flex-box section-height container">
+    <section class="flex-box section-height">
       <div class="content">
         <p class="heading-content">Next generation digital banking</p>
         <p class="para">
@@ -383,7 +463,7 @@
         />
       </div>
     </section>
-    <section class="section2 section-height container">
+    <section class="section2 section-height">
       <p class="heading-content">Why choose Easybank?</p>
       <p class="para para-position">
         We leverage Open Banking to turn your bank account into your financial
@@ -433,7 +513,7 @@
       </section>
     </section>
     <!-- Article section -->
-    <article class="article-container container">
+    <article class="article-container">
       <p class="heading-content">Latest Articles</p>
       <section class="article-content">
         <div class="image-para-container">
@@ -495,7 +575,7 @@
       </section>
     </article>
     <!-- Footer section -->
-    <footer class="footer container">
+    <footer class="footer">
       <section class="footer-image-icons">
         <div>
           <img
