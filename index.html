@@ -31,9 +31,6 @@
       .list {
         display: none;
       }
-      .list img svg{
-        display: none;
-      }
       /* Button style */
       .button-style {
         border-radius: 20px;
@@ -68,7 +65,7 @@
       }
       .para {
         color: gray;
-        padding: 10px 10px 10px 0;
+        padding: 10px 60px 10px 0;
       }
       /* Image below header */
       .image {
@@ -90,7 +87,7 @@
       .section2 {
         background-color: hsl(220, 16%, 96%);
         height: auto;
-        padding-left: 200px;
+        padding-left: 250px;
       }
       .para-position {
         padding-right: 850px;
@@ -113,12 +110,12 @@
         height: 100%;
       }
       .article-container {
-        width: 100%;
+        width: 1070px;
         height: 450px;
         background-color: hsl(0, 0%, 98%);
         display: flex;
         flex-direction: column;
-        padding: 80px 200px;
+        padding: 80px 250px;
       }
       .image-para-container {
         border-radius: 10px;
@@ -200,7 +197,7 @@
       /* mouse hover changes */
       header .header-box:hover {
         font-weight: bold;
-        text-decoration: underline solid hsl(192, 70%, 51%) 3px;
+        border-bottom: solid hsl(192, 70%, 51%) 5px;
         cursor: pointer;
       }
 
@@ -352,7 +349,7 @@
 
   <body>
     <!-- header of the page -->
-    <header class="flex-box-header">
+    <header class="flex-box-header container">
       <img src="./images/logo.svg" alt="Logo of EasyBank" />
       <section class="flex-box">
         <div class="header-box">Home</div>
@@ -366,7 +363,7 @@
       <button class="button-style">Request Invite</button>
     </header>
     <!-- 1st section of the page -->
-    <section class="flex-box section-height">
+    <section class="flex-box section-height container">
       <div class="content">
         <p class="heading-content">Next generation digital banking</p>
         <p class="para">
@@ -386,7 +383,7 @@
         />
       </div>
     </section>
-    <section class="section2 section-height">
+    <section class="section2 section-height container">
       <p class="heading-content">Why choose Easybank?</p>
       <p class="para para-position">
         We leverage Open Banking to turn your bank account into your financial
@@ -436,7 +433,7 @@
       </section>
     </section>
     <!-- Article section -->
-    <article class="article-container">
+    <article class="article-container container">
       <p class="heading-content">Latest Articles</p>
       <section class="article-content">
         <div class="image-para-container">
@@ -498,7 +495,7 @@
       </section>
     </article>
     <!-- Footer section -->
-    <footer class="footer">
+    <footer class="footer container">
       <section class="footer-image-icons">
         <div>
           <img
